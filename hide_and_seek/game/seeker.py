@@ -34,9 +34,9 @@ class Seeker:
         message = "\nI'm going to find you!"
         if self.distance[-1] == 0:
             message = "\nI'm going to find you!"
-        elif self.distance[-1] < self.distance[-2]:
-            message = "\nShhh. I'm sneaking in now..."
         elif self.distance[-1] > self.distance[-2]:
+            message = "\nShhh. I'm sneaking in now..."
+        elif self.distance[-1] < self.distance[-2]:
             message = "\nI'm running around, but I'll find you..."
         return message
 
